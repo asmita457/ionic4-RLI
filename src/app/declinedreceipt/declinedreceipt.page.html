@@ -1,0 +1,110 @@
+<!--<ion-header>-->
+<ion-toolbar color="medium">
+  <ion-buttons slot="start" style="color: black">
+    <ion-back-button text="" defaultHref="home" class="menubutton">
+    </ion-back-button>
+    <ion-menu-button class="menubuttonspace"></ion-menu-button>
+  </ion-buttons>
+  <ion-title align="center" class="titleall">Audit Req/Declined Receipt</ion-title>
+</ion-toolbar>
+<!--</ion-header>-->
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <ion-label class="h4-text">Date:</ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label class="h4-text">{{date}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="4">
+        <ion-label class="h4-text">Category:</ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label class="h4-text">{{category}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="4">
+        <ion-label class="h4-text">Amount($):</ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label class="h4-text">{{amount}}</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <ion-label class="h4-text">Transaction ID:</ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label class="h4-text">{{transaction}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-row>
+          <ion-label class="h4-text">Comments:</ion-label>
+        </ion-row>
+        <ion-textarea style="padding-left: 6px;padding-top: 4px;margin-bottom: 2px" [readonly]="readonly()"
+          class="border h4-text">{{comments}}</ion-textarea>
+      </ion-col>
+    </ion-row>
+    <hr>
+    <ion-row>
+      <ion-col>
+        <ion-label style="font-size: 15px;font-weight: bold">RLI office Update:</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <ion-label class="h4-text">Audit Status:</ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label class="h4-text">{{auditStatus}}</ion-label>
+      </ion-col>
+    </ion-row>
+    <div *ngIf="IsRequired == true">
+      <ion-row>
+        <ion-col size="4">
+          <ion-label class="h4-text">Date:</ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-label class="h4-text">{{date}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <ion-label class="h4-text">Transaction ID:</ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-label class="h4-text">{{transaction}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <ion-label class="h4-text">Status:</ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-label class="h4-text">{{receiptStatus}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-row>
+            <ion-label class="h4-text">Reason:</ion-label>
+          </ion-row>
+          <ion-textarea style="padding-left: 6px;padding-top: 4px;margin-bottom: 2px" [readonly]="readonly()"
+            class="border h4-text">{{reason}}</ion-textarea>
+        </ion-col>
+      </ion-row>
+      <button align="center" style="margin-top: 10px" class="receipts-buttonclass" (click)="newReceipt()" type="submit">Resubmit as New Receipt</button>
+    </div>
+  </ion-grid>
+</ion-content>

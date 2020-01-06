@@ -1,0 +1,137 @@
+.buttoncls{
+  text-align-all: center;
+  background-color: #E3A214;
+  cursor:pointer;
+  border: none;
+  margin-top: 5%;
+  width: 100%;
+  padding: 5px;
+  height: 35px;
+}
+
+.buttonclsss{
+  font-size: 15px;
+}
+
+.menubutton{
+  //font-size: 17px;
+  color: black !important;
+}
+.input-padding{
+  margin: 10px 0px !important;
+}
+
+.title-div{
+  width: 35%;
+}
+.h4-text{
+  font-size: 10px;
+  text-align: left;
+  padding-left: 10px;
+}
+.borderdate{
+  border: 0.5px solid black;
+  border-radius: 1px;
+  //margin-left: 20%;
+  width: 100%;
+  height: 30px !important;
+}
+.h2-text{
+  padding-left: 0.5px;
+  font-size: 10px;
+}
+.input-div{
+  width: 65%;
+}
+
+.input-date-div{
+  width: 45%;
+}
+
+.padding-to-input{
+  padding-right: 10px;
+}
+.textarea{
+  margin-top: 10px;
+  //width: 90%;
+  //height: 100%;
+
+}
+.alertbuttons{
+  background-color: #E3A214;
+  width: 50%;
+  align-self: start;
+}
+.alert-button.sc-ion-alert-md {
+  background-color: orange;
+  color: black;
+  /* width: 40%; */
+}
+.ion-content{
+  --background: var(--ion-color-light)
+}
+.sc-ion-select-popover-h ion-list.sc-ion-select-popover {
+  max-width: 100% !important;
+  position: relative;
+  //max-width: 100%;
+  white-space: pre-line;
+  text-align: left;
+}
+.accordion-list{
+  //margin-bottom: 2px;
+  --ion-item-background: #fff;
+  .section, .section-active{
+    --min-height: 8px;
+  }
+}
+
+.section{
+  --ion-item-background: #fff;
+  --ion-item-color: #000;
+}
+
+.section-active{
+  --background: transparent;
+  --ion-item-color: #000;
+  font-weight: 600;
+
+  ion-icon{
+    color: #000;
+  }
+}
+
+.child-list{
+  padding-left: 0px;
+  margin: 0px;
+  .child, .child-active{
+    margin-bottom: 2px;
+  }
+}
+
+.child{
+  --background: transparent;
+  --ion-item-color: #000;
+}
+
+.child-active{
+  --background: transparent;
+  --ion-item-color: #000;
+
+  ion-icon{
+    color: #000;
+  }
+}
+
+.product-list{
+  padding: 0px;
+  margin: 0px;
+}
+
+.calenderclass{
+  height: 35px !important;
+  width : 35px !important;
+}
+
+.accordion-list[_ngcontent-c2] {
+  margin-bottom: 0px !important;
+}

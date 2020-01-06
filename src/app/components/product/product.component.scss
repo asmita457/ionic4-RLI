@@ -1,0 +1,18 @@
+.child-item{
+  height: 35px;
+  --ion-item-background: #f3f2f1;
+  //--padding-start: 8px;
+  //--inner-padding-end: 8px;
+  //margin-bottom: 2px;
+}
+.border{
+  border: 0.5px solid black;
+  border-radius: 1px;
+  min-height: 40px !important;
+  //margin-right: 5px!important;
+  //margin-left: 5px!important;
+  width: 100%!important;
+  margin-top: 5px;
+  //margin-bottom: 5px;
+  alignment: center;
+}

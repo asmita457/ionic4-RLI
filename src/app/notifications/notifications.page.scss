@@ -1,0 +1,70 @@
+.sc-ion-segment-md-h {
+  //.sc-ion-segment-ios-h {
+  --background: transparent;
+  --background-hover: rgba(var(--ion-color-primary-rgb,56,128,255),0.1);
+  --background-activated: rgba(var(--ion-color-primary-rgb,56,128,255),0.16);
+  --background-checked: #3880ff00;
+  // --color: var(--ion-color-primary,#000000) !important;
+  --color-checked: var(--ion-color-primary-contrast,#fff);
+  --color-disabled: rgba(var(--ion-color-primary-rgb,56,128,255),0.3);
+  --color-checked-disabled: rgba(var(--ion-color-primary-contrast-rgb,255,255,255),0.3);
+  --border-color: transparent;
+  --indicator-color: black;
+  background-color: gray;
+  height: 50px;
+  --color: #000000;
+}
+
+.segmentwidth{
+  width: 50%;
+}
+
+#num1{
+  min-height: 30px;
+  background-color: rgba(227,162,20,0.7);
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+#num2{
+  margin-top: -10px;
+  min-height: 30px;
+  background-color: white;
+  padding: 8px;
+  text-align: justify;
+}
+
+.confirmBtn{
+  background-color: #E3A214;
+  cursor:pointer;
+  border: none;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 15px;
+  color: black;
+}
+
+.ion-margin-top, [margin-top] {
+  margin-top: var(--ion-margin, 0px);
+}
+
+.notificationTitle {
+  color:black; 
+  font-size:15px; 
+  font-weight:bold;
+}
+
+.notificationContent {
+  color:black; 
+  font-size:15px; 
+}
+
+.notificationDescription {
+  color:black; 
+  font-size:15px; 
+}
+
+ion-content{
+  --ion-background-color:#F0F0F0;
+}

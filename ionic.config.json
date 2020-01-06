@@ -1,0 +1,7 @@
+{
+  "name": "CommanderRLI",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

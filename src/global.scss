@@ -1,0 +1,173 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+.h4-text{
+  font-size: 15px;
+}
+
+.titleall{
+  margin-left: -10px;
+  margin-top: 1px;
+  color: #000000;
+  font-size: 20px;
+}
+.h5-text{
+  font-size: 15px;
+  text-align: left;
+  align-self: start;
+}
+
+.buttoncls{
+  background-color: #E3A214;
+  cursor:pointer;
+  border: none;
+  width: 50%;
+  margin-left: 25%;
+
+}
+.bordertask{
+  border: 0.5px solid black;
+  border-radius: 1px;
+  margin-top: 5px;
+  padding: 5px !important;
+  min-height: 30px !important;
+
+  width: 100% !important;
+}
+
+.calendar{
+  width: 75%;
+  height: 75%;
+  margin-top: 5px;
+  //alignment: bottom;
+  //alignment: bottom;
+  //align-self: baseline;
+}
+
+.selector{
+  font-size: 13px;
+  //alignment: center;
+  justify-content: center;
+  background-color: #ffffff;
+  //text-align: center;
+}
+
+.buttonclsss{
+  text-align-all: center;
+  background-color: #E3A214;
+  cursor:pointer;
+  border: none;
+  margin-top: 5%;
+  width: 100%;
+  padding: 5px;
+  height: 35px;
+}
+
+.sidemenucolor{
+  //background-color: #1e2023;
+  color: orangered;
+}
+.action-sheet-button-inner.sc-ion-action-sheet-md {
+            -ms-flex-pack: start;
+            justify-content: center;
+          }
+.alert-button-group.sc-ion-alert-ios {
+  background-color: #E3A214;
+  width: 100%;
+}
+
+.alert-button-inner.sc-ion-alert-ios, .alert-tappable.sc-ion-alert-ios {
+  color: black;
+  width: 100%;
+}
+
+/*SideMenu CSS*/
+ion-menu {
+  --ion-background-color: rgba(19,18,18,1);
+  --ion-text-color: var(--ion-color-primary-contrast);
+
+  ion-toolbar {
+    --background: rgba(19,18,18,1);
+  }
+
+  ion-list {/* optional, but it needs when you use gradient as a background color.*/
+    background: transparent;
+  }
+}
+.buttonclass{
+  text-align-all: center;
+  background-color: #E3A214;
+  cursor:pointer;
+  border: none;
+  margin-top: 5%;
+  width: 100%;
+  padding: 5px;
+  height: 35px;
+  font-size: 15px;
+ }
+.menubutton{
+  // margin-left: 8px;
+  color: black !important;
+  visibility: visible !important;
+  // margin-left: -20px !important;
+
+}
+.menubuttonspace{
+  margin-left: -20px;
+  color: black !important;
+  visibility: visible !important;
+}
+
+.headerlist{
+  background-color: #DCDCDC;
+  color: black;
+  height: 10px!important;
+  width: 100%;
+}
+.textsize{
+  font-size: 13px;
+}
+
+.sc-ion-segment-md-h {
+  //.sc-ion-segment-ios-h {
+  --background: transparent;
+  --background-hover: rgba(var(--ion-color-primary-rgb,56,128,255),0.1);
+  --background-activated: rgba(var(--ion-color-primary-rgb,56,128,255),0.16);
+  --background-checked: #3880ff00;
+  // --color: var(--ion-color-primary,#000000) !important;
+  --color-checked: var(--ion-color-primary-contrast,#fff);
+  --color-disabled: rgba(var(--ion-color-primary-rgb,56,128,255),0.3);
+  --color-checked-disabled: rgba(var(--ion-color-primary-contrast-rgb,255,255,255),0.3);
+  --border-color: transparent;
+  --indicator-color: black;
+  background-color: gray;
+  height: 50px;
+  --color: #000000;
+}
+.item-native {
+  //padding-left: unset;
+  //padding-right: unset;
+  //-webkit-padding-start: calc(var(--padding-start) + var(--ion-safe-area-left, 0px));
+  //padding-inline-start: calc(var(--padding-start) + var(--ion-safe-area-left, 0px));
+  //-webkit-padding-end: var(--padding-end);
+  //padding-inline-end: var(--padding-end);
+  background-color: transparent;
+}
+.alert-button.sc-ion-alert-md {
+  background-color: orange;
+  color: black;
+  /* width: 40%; */
+}
+
+ion-icon.sc-ion-back-button-md {
+  margin-left: -20px;
+}

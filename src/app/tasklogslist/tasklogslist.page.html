@@ -1,0 +1,72 @@
+<!--<ion-header class="app-page-home" color="medium">-->
+<ion-toolbar color="medium">
+    <ion-item lines="none" color="medium">
+  <ion-buttons>
+    <ion-back-button text="" defaultHref="home" class="menubutton">
+    </ion-back-button>
+    <ion-menu-button class="menubuttonspace"></ion-menu-button>
+  </ion-buttons>
+  <ion-title align="center" class="titleall">Task Logs</ion-title>
+  <ion-icon style="width: 30px;height: 30px;color: black" slot="end" name="help-circle-outline"
+    (click)="presentAlert()"></ion-icon>
+    </ion-item>
+</ion-toolbar>
+<!--</ion-header>-->
+
+
+<ion-content align="center">
+
+  <button align="center" style="margin-top: 10px" class="receipts-buttonclass" (click)="newtasklogs()" padding="10px"
+    type="submit">ADD TASK LOGS</button>
+
+  <br>
+
+  <ion-segment style="margin-top: 5px" (ionChange)="tabChanged($event)" scrollable>
+    <ion-segment-button value="Approved" checked layout="icon-end" class="segmentwidth">
+      <ion-label style="text-transform: capitalize;font-size: 14px">Approved</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="Request" class="segmentwidth">
+      <ion-label style="text-transform: capitalize;font-size: 14px">Audit Req/Declined</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div *ngIf="isSelected=='Approved'" style="margin-top: 15px">
+    <ion-label *ngIf="AuditData" style="font-size: 16px;font-weight: bold">No Approved Task Log
+    </ion-label>
+    <ion-list *ngFor="let item of ApprovedTaskLogsData; let j = index">
+      <ion-list-header class="headerlist" padding-end="5px">
+        <ion-label style="font-size: 15px;font-weight: bold">{{item.date}}</ion-label>
+        <ion-label style="text-transform: capitalize;font-size: 13px;font-weight: bold">Total
+          Hrs:{{item.totalHrs | number:'1.2-2'}}
+        </ion-label>
+      </ion-list-header>
+      <ion-item (click)="approvedTaskLog(j, i)" *ngFor="let eventName of item.taskLogArray; let i = index">
+        <ion-label class="h4-text">
+          {{eventName.labor_code}}
+        </ion-label>
+        <ion-icon (click)="approvedTaskLog(j, i)" slot="end" name="arrow-dropright"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="isSelected=='Request'" style="margin-top: 15px">
+    <ion-label *ngIf="noAuditData" style="font-size: 16px;font-weight: bold">No Audit Required or Declined Task Log
+    </ion-label>
+
+    <ion-list *ngFor="let item of nonApprovedTaskLogsData let j = index">
+      <ion-list-header class="headerlist" padding-end="5px">
+        <ion-label style="font-size: 15px;font-weight: bold">{{item.date}}</ion-label>
+        <ion-label style="text-transform: capitalize;font-size: 13px;font-weight: bold">Total
+          Hrs:{{item.totalHrs | number:'1.2-2'}}
+        </ion-label>
+      </ion-list-header>
+      <ion-item (click)="declinetasklog(j,i)" *ngFor="let eventName of item.taskLogArray ;let i = index">
+        <ion-label class="h4-text">
+          {{eventName.labor_code}}
+          <span *ngIf="eventName.status=='Audit Completed'" style="color: red;float:right">Declined</span>
+        </ion-label>
+        <ion-icon (click)="declinetasklog(j,i)" slot="end" name="arrow-dropright"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

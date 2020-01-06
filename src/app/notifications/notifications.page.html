@@ -1,0 +1,125 @@
+<!--<ion-header color="medium">-->
+<ion-toolbar color="medium">
+    <ion-buttons slot="start" style="color: black">
+        <!-- <ion-back-button text="" defaultHref="home" class="menubutton">
+        </ion-back-button> -->
+        <ion-menu-button class="menubutton"></ion-menu-button>
+    </ion-buttons>
+    <ion-title align="center" class="titleall">Notifications</ion-title>
+</ion-toolbar>
+<!--</ion-header>-->
+
+<ion-content>
+    <ion-segment (ionChange)="tabChanged($event)" scrollable>
+        <ion-segment-button value="Unread" checked layout="icon-end" class="segmentwidth">
+            <ion-label style="text-transform: capitalize;font-size: 14px">Unread</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="Read" class="segmentwidth">
+            <ion-label style="text-transform: capitalize;font-size: 14px">Read</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+
+    <div *ngIf="isSelected=='Unread'" align="center" margin-top="8px">
+        <div style="margin-top: 20px;">
+            <ion-label *ngIf="unreadNotificationsList.length == 0 && noDocsNotifications == true"
+                style="font-size: 16px; font-weight: bold; margin-top: 10px;">You Don't Have Any Notification
+                Yet
+            </ion-label>
+            <ion-label *ngIf="unreadNotificationsList.length == 0 && noDocsNotifications == false"
+                style="font-size: 16px; font-weight: bold; margin-top: 10px;">No New Notifications</ion-label>
+        </div>
+        <ion-card *ngFor="let notification of unreadNotificationsList">
+            <div id='num1'>
+                <ion-row>
+                    <ion-col size="3">
+                        <ion-label class="notificationTitle">Type: </ion-label>
+                    </ion-col>
+                    <ion-col size="9">
+                        <ion-label class="notificationContent">{{notification.type_value}}</ion-label>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="3">
+                        <ion-label class="notificationTitle">Date: </ion-label>
+                    </ion-col>
+                    <ion-col size="9">
+                        <ion-label class="notificationContent">{{notification.created_on}}</ion-label>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="3">
+                        <ion-label class="notificationTitle">From: </ion-label>
+                    </ion-col>
+                    <ion-col size="9">
+                        <ion-label class="notificationContent">{{notification.username}}</ion-label>
+                    </ion-col>
+                </ion-row>
+                <ion-row *ngIf="notification.event_name != null">
+                    <ion-col size="3">
+                        <ion-label class="notificationTitle">Event: </ion-label>
+                    </ion-col>
+                    <ion-col size="9">
+                        <ion-label class="notificationContent">{{notification.event_name}}</ion-label>
+                    </ion-col>
+                </ion-row>
+            </div>
+            <div id='num2'>
+                <ion-label class="notificationDescription">
+                    {{notification.announcement}}
+                </ion-label>
+                <button class="confirmBtn" align="center" padding="2px"
+                    (click)="onClickConfirm(notification)">Confirm</button>
+            </div>
+        </ion-card>
+    </div>
+
+    <div *ngIf="isSelected=='Read'" align="center" margin-top="8px">
+        <div style="margin-top: 20px;">
+            <ion-label *ngIf="readNotificationsList.length == 0"
+                style="font-size: 16px; font-weight: bold; margin-top: 10px;">No New
+                Notification</ion-label>
+        </div>
+        <ion-card *ngFor="let notification of readNotificationsList">
+            <div id='num1'>
+                <ion-row>
+                    <ion-col size="3">
+                        <ion-label class="notificationTitle">Type: </ion-label>
+                    </ion-col>
+                    <ion-col size="9">
+                        <ion-label class="notificationContent">{{notification.type_value}}</ion-label>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="3">
+                        <ion-label class="notificationTitle">Date: </ion-label>
+                    </ion-col>
+                    <ion-col size="9">
+                        <ion-label class="notificationContent">{{notification.created_on}}</ion-label>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="3">
+                        <ion-label class="notificationTitle">From: </ion-label>
+                    </ion-col>
+                    <ion-col size="9">
+                        <ion-label class="notificationContent">{{notification.username}}</ion-label>
+                    </ion-col>
+                </ion-row>
+                <ion-row *ngIf="notification.event_name != null">
+                    <ion-col size="3">
+                        <ion-label class="notificationTitle">Event: </ion-label>
+                    </ion-col>
+                    <ion-col size="9">
+                        <ion-label class="notificationContent">{{notification.event_name}}</ion-label>
+                    </ion-col>
+                </ion-row>
+            </div>
+            <div id='num2'>
+                <ion-label class="notificationDescription">
+                    {{notification.announcement}}
+                </ion-label>
+                <!-- <button class="confirmBtn" align="center" padding="2px" (click)="onClickConfirm()">Confirm</button> -->
+            </div>
+        </ion-card>
+    </div>
+</ion-content>

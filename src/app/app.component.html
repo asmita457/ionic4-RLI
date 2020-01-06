@@ -1,0 +1,28 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title align="center">Hi, {{userName}}</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="sidemenucolor" >
+        <ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages" (click)="sideMenuClicked(p.title)">
+            <ion-item class="sidemenucolor" [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon class="sidemenucolor" slot="start" [name]="p.icon"></ion-icon>
+              <ion-label style="font-size: 15px">
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+      <ion-footer>
+        <p align="left" style="color: orangered;" padding>Version: 1.6.2</p>
+      </ion-footer>
+    </ion-menu>
+
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

@@ -1,0 +1,74 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-email-composer": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-telerik-imagepicker": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-request-location-accuracy": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.rli.commander"
+    },
+    "cordova-fabric-plugin": {
+      "FABRIC_API_KEY": "f053548e22d27528cdab2fdbfa8b528628fc8ade",
+      "FABRIC_API_SECRET": "b175f0a34b930d9c66ed1c59f98a5e0e504eea33ca801221f95471f852aac7a2",
+      "PACKAGE_NAME": "com.rli.commander"
+    }
+  },
+  "dependent_plugins": {}
+}

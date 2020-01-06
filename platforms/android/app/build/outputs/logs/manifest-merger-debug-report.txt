@@ -1,0 +1,285 @@
+-- Merging decision tree log ---
+provider#org.apache.cordova.camera.FileProvider
+INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:12:9-14:20
+	android:grantUriPermissions
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:12:92-126
+	android:authorities
+		INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:12:19-66
+	android:exported
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:12:67-91
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:12:127-180
+provider#de.appplant.cordova.emailcomposer.Provider
+INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:15:9-17:20
+	android:grantUriPermissions
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:15:106-140
+	android:authorities
+		INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:15:19-80
+	android:exported
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:15:81-105
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:15:141-198
+manifest
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.1.aar/7bec8cb2926288d322d75236cad13959/AndroidManifest.xml:2:1-19:12
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/469fb545d61f1303286ac6f3a4a95684/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/d66166dc98c4700a199de5a457320bdd/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/1ccaa3f592cbb07b8fc8b65462e7c53b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/1f44c7a8f6e94c04463ba5bd9f5badd7/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/1ac2f3b6a10a2a78bd7657756b24e5c6/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/25cb77fb912bf9327e59129dc07301a9/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/1c03b9f8df47b8ca96b0317858933461/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/ea9c948ebf154c0f730e53647ab7d38a/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/c649007226772ec71f4ae4349844a690/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/a8e32409d272090bd36a4e2a6a2adad2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/7e3448d0da19ae5347acadad67950701/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ec5607136f9471379c0e1b77a04c1800/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/a33c5f8a7d0f66339f80c4b5921519a5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/0fd4511af36d6a0affeaab7bd82e13c0/AndroidManifest.xml:17:1-22:12
+MERGED from [:CordovaLib] /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
+MERGED from [com.crashlytics.sdk.android:beta:1.2.7] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/beta-1.2.7.aar/250a0bcd1cbcb1893ae9370156d192a9/AndroidManifest.xml:2:1-13:12
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.1.aar/eab92225d6479b18ef535ad9fd43724b/AndroidManifest.xml:45:1-56:12
+MERGED from [com.crashlytics.sdk.android:answers:1.4.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/answers-1.4.1.aar/40d8f75936313fe7133bf2b35825f424/AndroidManifest.xml:2:1-13:12
+MERGED from [io.fabric.sdk.android:fabric:1.4.2] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/fabric-1.4.2.aar/ac262ac7bc38dcdd6a927207160817c7/AndroidManifest.xml:22:1-33:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f96491777c6d459f0db9d2ebc6e292b6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/e9759c8317392642fe99d6a6cfc7c0a3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/3daeaba25a8b4c028ae008ac107beec9/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/09e5eb28d1bdfcc76624022ee1c02bcc/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:2:102-129
+		INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:2:74-101
+		INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml
+	android:hardwareAccelerated
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:2:11-45
+	xmlns:android
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:2:130-188
+	android:versionCode
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:2:46-73
+		INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml
+supports-screens
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:3:5-191
+	android:largeScreens
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:3:49-76
+	android:smallScreens
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:3:132-159
+	android:normalScreens
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:3:77-105
+	android:xlargeScreens
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:3:160-188
+	android:resizeable
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:3:106-131
+	android:anyDensity
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:3:23-48
+uses-permission#android.permission.INTERNET
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.1.aar/7bec8cb2926288d322d75236cad13959/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.1.aar/7bec8cb2926288d322d75236cad13959/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.7] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/beta-1.2.7.aar/250a0bcd1cbcb1893ae9370156d192a9/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.7] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/beta-1.2.7.aar/250a0bcd1cbcb1893ae9370156d192a9/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.1.aar/eab92225d6479b18ef535ad9fd43724b/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.1.aar/eab92225d6479b18ef535ad9fd43724b/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/answers-1.4.1.aar/40d8f75936313fe7133bf2b35825f424/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/answers-1.4.1.aar/40d8f75936313fe7133bf2b35825f424/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.2] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/fabric-1.4.2.aar/ac262ac7bc38dcdd6a927207160817c7/AndroidManifest.xml:29:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.2] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/fabric-1.4.2.aar/ac262ac7bc38dcdd6a927207160817c7/AndroidManifest.xml:29:5-67
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:5:5-20:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.1.aar/7bec8cb2926288d322d75236cad13959/AndroidManifest.xml:11:5-17:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.1.aar/7bec8cb2926288d322d75236cad13959/AndroidManifest.xml:11:5-17:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/469fb545d61f1303286ac6f3a4a95684/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/469fb545d61f1303286ac6f3a4a95684/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/d66166dc98c4700a199de5a457320bdd/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/d66166dc98c4700a199de5a457320bdd/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/1ccaa3f592cbb07b8fc8b65462e7c53b/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/1ccaa3f592cbb07b8fc8b65462e7c53b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/1f44c7a8f6e94c04463ba5bd9f5badd7/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/1f44c7a8f6e94c04463ba5bd9f5badd7/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/1ac2f3b6a10a2a78bd7657756b24e5c6/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/1ac2f3b6a10a2a78bd7657756b24e5c6/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/25cb77fb912bf9327e59129dc07301a9/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/25cb77fb912bf9327e59129dc07301a9/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/1c03b9f8df47b8ca96b0317858933461/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/1c03b9f8df47b8ca96b0317858933461/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/ea9c948ebf154c0f730e53647ab7d38a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/ea9c948ebf154c0f730e53647ab7d38a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.crashlytics.sdk.android:beta:1.2.7] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/beta-1.2.7.aar/250a0bcd1cbcb1893ae9370156d192a9/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.7] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/beta-1.2.7.aar/250a0bcd1cbcb1893ae9370156d192a9/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.1.aar/eab92225d6479b18ef535ad9fd43724b/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.1.aar/eab92225d6479b18ef535ad9fd43724b/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/answers-1.4.1.aar/40d8f75936313fe7133bf2b35825f424/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/answers-1.4.1.aar/40d8f75936313fe7133bf2b35825f424/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.2] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/fabric-1.4.2.aar/ac262ac7bc38dcdd6a927207160817c7/AndroidManifest.xml:31:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.2] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/fabric-1.4.2.aar/ac262ac7bc38dcdd6a927207160817c7/AndroidManifest.xml:31:5-20
+	android:supportsRtl
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:5:114-140
+	android:label
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:5:81-113
+	android:hardwareAccelerated
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:5:18-52
+	android:icon
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:5:53-80
+activity#com.rli.commander.MainActivity
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:6:9-11:20
+	android:label
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:6:97-134
+	android:launchMode
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:6:135-165
+	android:windowSoftInputMode
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:6:257-299
+	android:configChanges
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:6:19-96
+	android:theme
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:6:194-256
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:6:166-193
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:7:13-10:29
+	android:label
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:7:28-65
+action#android.intent.action.MAIN
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:8:17-69
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:8:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:9:17-77
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
+activity#com.synconset.MultiImageChooserActivity
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:18:9-160
+	android:label
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:18:19-57
+	android:theme
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:18:113-157
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:18:58-112
+meta-data#io.fabric.ApiKey
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:19:9-111
+	android:value
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:19:52-108
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:19:20-51
+uses-sdk
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:21:5-74
+INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:21:5-74
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.1.aar/7bec8cb2926288d322d75236cad13959/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.1.aar/7bec8cb2926288d322d75236cad13959/AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/469fb545d61f1303286ac6f3a4a95684/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/469fb545d61f1303286ac6f3a4a95684/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/d66166dc98c4700a199de5a457320bdd/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/d66166dc98c4700a199de5a457320bdd/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/1ccaa3f592cbb07b8fc8b65462e7c53b/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/1ccaa3f592cbb07b8fc8b65462e7c53b/AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/1f44c7a8f6e94c04463ba5bd9f5badd7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/1f44c7a8f6e94c04463ba5bd9f5badd7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/1ac2f3b6a10a2a78bd7657756b24e5c6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/1ac2f3b6a10a2a78bd7657756b24e5c6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/25cb77fb912bf9327e59129dc07301a9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/25cb77fb912bf9327e59129dc07301a9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/1c03b9f8df47b8ca96b0317858933461/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/1c03b9f8df47b8ca96b0317858933461/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/ea9c948ebf154c0f730e53647ab7d38a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/ea9c948ebf154c0f730e53647ab7d38a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/c649007226772ec71f4ae4349844a690/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/c649007226772ec71f4ae4349844a690/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/a8e32409d272090bd36a4e2a6a2adad2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/a8e32409d272090bd36a4e2a6a2adad2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/7e3448d0da19ae5347acadad67950701/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/7e3448d0da19ae5347acadad67950701/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ec5607136f9471379c0e1b77a04c1800/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ec5607136f9471379c0e1b77a04c1800/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/a33c5f8a7d0f66339f80c4b5921519a5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/a33c5f8a7d0f66339f80c4b5921519a5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/0fd4511af36d6a0affeaab7bd82e13c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/0fd4511af36d6a0affeaab7bd82e13c0/AndroidManifest.xml:20:5-44
+MERGED from [:CordovaLib] /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
+MERGED from [com.crashlytics.sdk.android:beta:1.2.7] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/beta-1.2.7.aar/250a0bcd1cbcb1893ae9370156d192a9/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.7] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/beta-1.2.7.aar/250a0bcd1cbcb1893ae9370156d192a9/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.1.aar/eab92225d6479b18ef535ad9fd43724b/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.1.aar/eab92225d6479b18ef535ad9fd43724b/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/answers-1.4.1.aar/40d8f75936313fe7133bf2b35825f424/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/answers-1.4.1.aar/40d8f75936313fe7133bf2b35825f424/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.2] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/fabric-1.4.2.aar/ac262ac7bc38dcdd6a927207160817c7/AndroidManifest.xml:27:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.2] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/fabric-1.4.2.aar/ac262ac7bc38dcdd6a927207160817c7/AndroidManifest.xml:27:5-43
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f96491777c6d459f0db9d2ebc6e292b6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f96491777c6d459f0db9d2ebc6e292b6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/e9759c8317392642fe99d6a6cfc7c0a3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/e9759c8317392642fe99d6a6cfc7c0a3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/3daeaba25a8b4c028ae008ac107beec9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/3daeaba25a8b4c028ae008ac107beec9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/09e5eb28d1bdfcc76624022ee1c02bcc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/09e5eb28d1bdfcc76624022ee1c02bcc/AndroidManifest.xml:20:5-44
+INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:21:5-74
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/469fb545d61f1303286ac6f3a4a95684/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:21:42-71
+	android:minSdkVersion
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:21:15-41
+		INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:22:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:23:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:24:22-76
+uses-feature#android.hardware.location.gps
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:25:5-66
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:25:19-63
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:26:22-76
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:13:13-123
+	android:resource
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:13:75-120
+	android:name
+		ADDED from /Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/AndroidManifest.xml:13:24-74
+provider#com.crashlytics.android.CrashlyticsInitProvider
+ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.1.aar/7bec8cb2926288d322d75236cad13959/AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.1.aar/7bec8cb2926288d322d75236cad13959/AndroidManifest.xml:14:13-75
+	android:exported
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.1.aar/7bec8cb2926288d322d75236cad13959/AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.1.aar/7bec8cb2926288d322d75236cad13959/AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.1.aar/7bec8cb2926288d322d75236cad13959/AndroidManifest.xml:13:13-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/1ac2f3b6a10a2a78bd7657756b24e5c6/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/1ac2f3b6a10a2a78bd7657756b24e5c6/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/1ac2f3b6a10a2a78bd7657756b24e5c6/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/1ac2f3b6a10a2a78bd7657756b24e5c6/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/ea9c948ebf154c0f730e53647ab7d38a/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/ea9c948ebf154c0f730e53647ab7d38a/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/ea9c948ebf154c0f730e53647ab7d38a/AndroidManifest.xml:24:13-58

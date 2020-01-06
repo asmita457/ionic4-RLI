@@ -1,0 +1,150 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/incadmin/Documents/Ashok_Workspace/RLI-Commander/rli-commander-android-ionic4/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-de/values-de.xml",
+            "map": [
+                {
+                    "source": "/Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/88234178009411424ddee5fc2adaa194/res/values-de/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "203",
+                        "endOffsets": "450"
+                    },
+                    "to": {
+                        "startLines": "29",
+                        "startColumns": "4",
+                        "startOffsets": "3269",
+                        "endColumns": "203",
+                        "endOffsets": "3468"
+                    }
+                },
+                {
+                    "source": "/Users/incadmin/Documents/Ashok_Workspace/RLI-Commander/rli-commander-android-ionic4/platforms/android/app/src/main/res/values-de/multiimagechooser_strings_de.xml",
+                    "from": {
+                        "startLines": "4,3,2,7,6,5",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "223,116,55,566,469,359",
+                        "endColumns": "135,106,60,104,96,109",
+                        "endOffsets": "354,218,111,666,561,464"
+                    },
+                    "to": {
+                        "startLines": "39,40,41,42,43,44",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "4889,5025,5132,5193,5298,5395",
+                        "endColumns": "135,106,60,104,96,109",
+                        "endOffsets": "5020,5127,5188,5293,5390,5500"
+                    }
+                },
+                {
+                    "source": "/Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/0565658813f4bbc007eadfe338692cd5/res/values-de/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "245,352,548,674,784,1021,1150,1297,1441,1680,1790,1990,2119,2340,2542,2639,2728",
+                        "endColumns": "106,195,125,109,236,128,146,143,238,109,199,128,220,201,96,88,104",
+                        "endOffsets": "351,547,673,783,1020,1149,1296,1440,1679,1789,1989,2118,2339,2541,2638,2727,2832"
+                    },
+                    "to": {
+                        "startLines": "21,22,23,24,25,26,27,28,30,31,32,33,34,35,36,37,38",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2049,2160,2356,2486,2600,2837,2970,3121,3473,3712,3826,4026,4159,4380,4586,4687,4780",
+                        "endColumns": "110,195,129,113,236,132,150,147,238,113,199,132,220,205,100,92,108",
+                        "endOffsets": "2155,2351,2481,2595,2832,2965,3116,3264,3707,3821,4021,4154,4375,4581,4682,4775,4884"
+                    }
+                },
+                {
+                    "source": "/Users/incadmin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/a8cc92e71b8c6f4c5af6c7544800c277/res/values-de/values-de.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,160,268,391,489,601,687,792,907,984,1060,1142,1253,1356,1455,1566,1668,1775,1897,1999",
+                        "endColumns": "104,107,122,97,111,85,104,114,76,75,81,110,102,98,110,101,106,121,101,100",
+                        "endOffsets": "155,263,386,484,596,682,787,902,979,1055,1137,1248,1351,1450,1561,1663,1770,1892,1994,2095"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,45",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,210,318,441,539,651,737,842,957,1034,1110,1192,1303,1406,1505,1616,1718,1825,1947,5505",
+                        "endColumns": "104,107,122,97,111,85,104,114,76,75,81,110,102,98,110,101,106,121,101,100",
+                        "endOffsets": "205,313,436,534,646,732,837,952,1029,1105,1187,1298,1401,1500,1611,1713,1820,1942,2044,5601"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-de/values-de.xml",
+            "map": [
+                {
+                    "source": "/Users/incadmin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/469fb545d61f1303286ac6f3a4a95684/res/values-de/values-de.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,160,268,391,489,601,687,792,907,984,1060,1142,1253,1356,1455,1566,1668,1775,1897,1999",
+                        "endColumns": "104,107,122,97,111,85,104,114,76,75,81,110,102,98,110,101,106,121,101,100",
+                        "endOffsets": "155,263,386,484,596,682,787,902,979,1055,1137,1248,1351,1450,1561,1663,1770,1892,1994,2095"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,45",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,210,318,441,539,651,737,842,957,1034,1110,1192,1303,1406,1505,1616,1718,1825,1947,5505",
+                        "endColumns": "104,107,122,97,111,85,104,114,76,75,81,110,102,98,110,101,106,121,101,100",
+                        "endOffsets": "205,313,436,534,646,732,837,952,1029,1105,1187,1298,1401,1500,1611,1713,1820,1942,2044,5601"
+                    }
+                },
+                {
+                    "source": "/Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/ea9c948ebf154c0f730e53647ab7d38a/res/values-de/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "203",
+                        "endOffsets": "450"
+                    },
+                    "to": {
+                        "startLines": "29",
+                        "startColumns": "4",
+                        "startOffsets": "3269",
+                        "endColumns": "203",
+                        "endOffsets": "3468"
+                    }
+                },
+                {
+                    "source": "/Users/incadmin/Documents/gitlab/rli-commander-android-ionic4/platforms/android/app/src/main/res/values-de/multiimagechooser_strings_de.xml",
+                    "from": {
+                        "startLines": "4,3,2,7,6,5",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "223,116,55,566,469,359",
+                        "endColumns": "135,106,60,104,96,109",
+                        "endOffsets": "354,218,111,666,561,464"
+                    },
+                    "to": {
+                        "startLines": "39,40,41,42,43,44",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "4889,5025,5132,5193,5298,5395",
+                        "endColumns": "135,106,60,104,96,109",
+                        "endOffsets": "5020,5127,5188,5293,5390,5500"
+                    }
+                },
+                {
+                    "source": "/Users/incadmin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/1ac2f3b6a10a2a78bd7657756b24e5c6/res/values-de/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "245,352,548,674,784,1021,1150,1297,1441,1680,1790,1990,2119,2340,2542,2639,2728",
+                        "endColumns": "106,195,125,109,236,128,146,143,238,109,199,128,220,201,96,88,104",
+                        "endOffsets": "351,547,673,783,1020,1149,1296,1440,1679,1789,1989,2118,2339,2541,2638,2727,2832"
+                    },
+                    "to": {
+                        "startLines": "21,22,23,24,25,26,27,28,30,31,32,33,34,35,36,37,38",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2049,2160,2356,2486,2600,2837,2970,3121,3473,3712,3826,4026,4159,4380,4586,4687,4780",
+                        "endColumns": "110,195,129,113,236,132,150,147,238,113,199,132,220,205,100,92,108",
+                        "endOffsets": "2155,2351,2481,2595,2832,2965,3116,3264,3707,3821,4021,4154,4375,4581,4682,4775,4884"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+<ion-content align="center" padding>
+    <img  class="LogoSet" src="assets/icon/rlilogo.png" />
+    <!--<div style="padding: 20px">-->
+    <h4>Log In With Your Commander Web Credentials</h4>
+    <!--</div>-->
+    <form #form="ngForm" novalidate>
+  <ion-list>
+      <!--<ion-item>-->
+          <!--<ion-label position="floating" color="medium" style="font-size: 13px">-->
+              <!--<ion-icon name="mail"></ion-icon>-->
+              <!--Badge/Email-->
+          <!--</ion-label>-->
+          <!--<ion-input type="email" name="email" ></ion-input>-->
+      <!--</ion-item>-->
+      <ion-item>
+          <ion-label position="floating" color="medium" style="font-size: 13px">
+              <ion-icon name="mail"></ion-icon>
+              Badge/Email
+          </ion-label>
+          <!--<ion-input type="email" name="email" [(ngModel)]="email" required pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"></ion-input>-->
+
+          <ion-input type="email" name="email" [(ngModel)]="email" required pattern="[A-Za-z0-9._%+-@$/+*!#^&()=]{1,}"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="floating" color="medium" style="font-size: 13px">
+              <ion-icon  name="lock"></ion-icon>
+              Password
+          </ion-label>
+          <ion-input  type="password" name="password" [(ngModel)]="password" required pattern="[A-Za-z0-9._%+-@$/+*!#^&()=]{5,}"></ion-input>
+      </ion-item>
+      <br>
+      <button class="buttonclass" (click)="submitBtnClicked()"  type="submit">Log In</button>
+      <br>
+      <br>
+      <!--<a (click)="forgetpassord()" style="font-size: 13px" align="center">Forgot Password</a>-->
+      <label (click)="forgetpassord()" style="font-size: 13px; color: blue" align="center"><u>Forgot Password</u></label>
+  </ion-list>
+    </form>
+</ion-content>

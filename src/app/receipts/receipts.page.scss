@@ -1,0 +1,85 @@
+.receipts-buttonclass{
+  background-color: #E3A214;
+  cursor:pointer;
+  border: none;
+  width: 60%;
+  height: 35px;
+  padding: 5px;
+}
+.footer-bg{
+  height: 5%;
+  padding: 5px;
+  background-color: #9AB7BC;
+}
+
+.menubutton{
+  color: black !important;
+}
+//.titleall{
+//  margin-top: 7px;
+//  //font-size: 15px;
+//  //align-content: start;
+//}
+
+.sc-ion-segment-md-h {
+//.sc-ion-segment-ios-h {
+  --background: transparent;
+  --background-hover: rgba(var(--ion-color-primary-rgb,56,128,255),0.1);
+  --background-activated: rgba(var(--ion-color-primary-rgb,56,128,255),0.16);
+  --background-checked: #3880ff00;
+  // --color: var(--ion-color-primary,#000000) !important;
+  --color-checked: var(--ion-color-primary-contrast,#fff);
+  --color-disabled: rgba(var(--ion-color-primary-rgb,56,128,255),0.3);
+  --color-checked-disabled: rgba(var(--ion-color-primary-contrast-rgb,255,255,255),0.3);
+  --border-color: transparent;
+  --indicator-color: black;
+  background-color: gray;
+  height: 50px;
+  --color: #000000;
+}
+
+.border{
+  border: 0.5px solid black;
+  border-radius: 1px;
+  min-height: 40px !important;
+  //margin-right: 5px!important;
+  //margin-left: 5px!important;
+  width: 100%!important;
+  margin-top: 5px;
+  //margin-bottom: 5px;
+  alignment: center;
+}
+
+.headerlist{
+  background-color: #DCDCDC;
+  color: black;
+  height: 10px!important;
+  width: 100%;
+  }
+
+.h4-text{
+  font-size: 15px;
+}
+
+.payout{
+  font-size: 15px;
+  color: red;
+}
+
+.receiptTotal {
+  font-size: 15px; 
+  text-align: end; 
+  font-weight: bold;
+}
+//
+//:host(.activated), :host(.segment-button-checked) {
+//  width: 50%;
+//}
+.segmentwidth{
+  width: 50%;
+}
+
+.list-md {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}

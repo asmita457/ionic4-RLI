@@ -1,0 +1,136 @@
+<!--<ion-header color="medium">-->
+<ion-toolbar color="medium">
+  <ion-buttons slot="start" style="color: black">
+    <ion-back-button text="" defaultHref="home" class="menubutton">
+    </ion-back-button>
+    <ion-menu-button class="menubuttonspace"></ion-menu-button>
+  </ion-buttons>
+  <ion-title align="center" class="titleall">Enter Receipt</ion-title>
+  <ion-icon style="width: 30px;height: 30px;color: black" slot="end" name="help-circle-outline"
+    (click)="presentAlert()"></ion-icon>
+</ion-toolbar>
+<!--</ion-header>-->
+
+<ion-content>
+
+  <ion-list>
+    <form #form="ngForm" novalidate>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <ion-label class="h3-text" type="text">Event:</ion-label>
+          </ion-col>
+          <ion-col size="8">
+            <ion-select class="bordertask selector" placeholder="{{eventPlaceholder}}" interface="popover"
+              (ionChange)="onEventSelect($event)">
+              <ion-select-option *ngFor="let title of eventArray;let idx = index" selected="{{(idx==0).toString()}}"
+                [value]="title">{{title}}</ion-select-option>
+            </ion-select>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="4">
+            <ion-label class="h3-text" type="text">Yard:</ion-label>
+          </ion-col>
+          <ion-col size="8">
+            <ion-select class="bordertask selector" interface="popover" (ionChange)="onYardSelect($event)">
+              <ion-select-option *ngFor="let item of YardNamearr; let i = index" [selected]="i == selectedIndex"
+                [value]="item">{{item}}</ion-select-option>
+            </ion-select>
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col size="4">
+            <ion-label class="h3-text" type="text">RLI Credit Card:</ion-label>
+          </ion-col>
+          <ion-col size="8">
+            <ion-radio-group>
+              <ion-list class="bordertask selector">
+                <ion-item>
+                  <ion-label>Yes</ion-label>
+                  <ion-radio slot="end" value="yes" (click)="ngIfCtrl()"></ion-radio>
+                </ion-item>
+                <ion-item lines="none">
+                  <ion-label>No</ion-label>
+                  <ion-radio slot="end" value="no" (click)="hideContact()" checked></ion-radio>
+                </ion-item>
+              </ion-list>
+            </ion-radio-group>
+          </ion-col>
+        </ion-row>
+
+        <ion-row *ngIf="show">
+          <ion-col size="4">
+            <ion-label class="h3-text" type="text">Credit Card No.:</ion-label>
+          </ion-col>
+          <ion-col size="8">
+            <ion-input type="number" style="height: 30px;padding:10px" class="bordertask selector"
+              placeholder="Last 4 digits" maxlength="4" [(ngModel)]="creditCardNumber" name="creditCardNumber" required pattern="0-9{4}">
+            </ion-input>
+
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+          <ion-col size="4">
+            <ion-label class="h3-text" type="text">Date:</ion-label>
+          </ion-col>
+          <ion-col size="6">
+            <ion-datetime #myPicker style="height: 30px" class="bordertask selector" align="start"
+              displayFormat="MM-DD-YYYY" name="currentdate" [(ngModel)]="currentdate">
+            </ion-datetime>
+            <!-- <ion-input style="height: 30px" type="date" name="currentdate" [(ngModel)]="currentdate" class="bordertask selector"></ion-input> -->
+          </ion-col>
+          <ion-col size="2">
+            <ion-icon style="height: 30px; width: 30px" (click)="iconOpenCalendar()" name="calendar"></ion-icon>
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+          <ion-col size="4">
+            <ion-label class="h3-text" type="text">Category:</ion-label>
+          </ion-col>
+          <ion-col size="8">
+            <ion-select class="bordertask selector" interface="popover"
+              (ionChange)="onCategorySelect($event, i)">
+              <ion-select-option *ngFor="let title of categoryValues; let i= index" [selected]="i == selectedcategoryIndex" [value]="title">{{title}}
+              </ion-select-option>
+              <!-- <ion-select-option *ngFor="let title of categoryValues;">{{title}}</ion-select-option> -->
+              <!-- <ion-select-option *ngFor="let title of categoryArray;let idx = index" [value]="title.Value" selected="{{(idx==-1).toString()}}">{{title}}</ion-select-option> -->
+            </ion-select>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="4">
+            <ion-label class="h3-text" type="text">Amount($):</ion-label>
+          </ion-col>
+          <ion-col size="8">
+            <ion-input style="height: 30px;padding:10px" type="number" name="amount" [(ngModel)]="amount"
+              class="bordertask selector" placeholder="E.g.50.00" required pattern="[0-9]{2,}">
+            </ion-input>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-label class="h3-text" type="text">Comment:</ion-label>
+            <ion-row>
+              <ion-textarea class="border" name="comment" [(ngModel)]="comment"
+                placeholder="E.g.I paid this bill from my account"></ion-textarea>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+        <button class="uploadImageBtn" align="center" padding="2px" (click)="presentActionSheet()">Upload Image</button>
+        <br>
+        <img style="margin-top: 10px" src="{{photos}}" />
+        <button class="submitBtn" align="center" padding="2px" (click)="validateReceiptForm()">Submit</button>
+      </ion-grid>
+    </form>
+  </ion-list>
+</ion-content>

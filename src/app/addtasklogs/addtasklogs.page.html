@@ -1,0 +1,291 @@
+<!--<ion-header color="medium">-->
+<ion-toolbar color="medium">
+  <ion-buttons slot="start">
+    <ion-back-button text="" defaultHref="home" class="menubutton">
+    </ion-back-button>
+    <ion-menu-button class="menubuttonspace"></ion-menu-button>
+  </ion-buttons>
+  <ion-title align="center" class="titleall" margin-start="10px">Enter Task Log</ion-title>
+  <ion-icon style="width: 30px;height: 30px;color: black" slot="end" name="help-circle-outline" (click)="messagehelp()">
+  </ion-icon>
+
+</ion-toolbar>
+<!--</ion-header>-->
+
+<ion-content>
+  <ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-label class="h3-text" type="text">Event:</ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-select class="bordertask selector" [(ngModel)]="eventName" interface="popover"
+            [disabled]="disableSelector">
+            <ion-select-option [value]="eventName">
+              {{eventName}}
+            </ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="4">
+        <ion-label class="h3-text" type="text">Date:</ion-label>
+        </ion-col>
+        <!-- <ion-col size="8">
+        <ion-input style="height: 30px" type="date" style="size: 15px" class="borderdate" [(ngModel)]="eventdate"></ion-input>
+        </ion-col> -->
+        <ion-col size="6">
+        <ion-datetime #myPicker display-format="MM-DD-YYYY" style="height: 30px" class="bordertask selector"
+        align="start" [(ngModel)]="eventdate" [disabled]="disableSelector" (ionChange)="Logchanged(eventdate)"></ion-datetime>
+        </ion-col>
+        <ion-col size="2">
+        <!-- <ion-icon name="calendar" class="calenderclass" ion-datetime-picker></ion-icon> -->
+        <ion-icon class="calenderclass" (click)="iconOpenCalendar()" name="calendar"></ion-icon>
+        </ion-col>
+        </ion-row>
+
+      <ion-row>
+        <ion-col size="4">
+          <ion-label class="h3-text" type="text">Log Id:</ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-input [readonly]="readonly()" style="height: 30px" class="bordertask selector" [(ngModel)]="LOG">
+          </ion-input>
+        </ion-col>
+      </ion-row>
+
+      <!--start Accordion - Adding multiple tasklogs -->
+      <ion-list *ngFor="let item of information; let i= index" class="accordion-list" detail="false" no-padding
+        style="background-color: #f8f8f8;">
+        <ion-item tappable (click)="toggleSection(i)" [ngClass]="{'active': item.open, 'section': !item.open}"
+          style="background-color: #f8f8f8;">
+          <ion-icon slot="start" name="add" *ngIf="!item.open"></ion-icon>
+          <ion-icon slot="start" name="remove" *ngIf="item.open"></ion-icon>
+          <ion-label style="font-size: 17px">
+            {{item.name}}
+          </ion-label>
+        </ion-item>
+        <div *ngIf="item.children && item.open">
+          <ion-list *ngFor="let child of item.children; let j= index" lines="none" class="child-list">
+            <ion-row>
+              <ion-col size="4">
+              <ion-label class="h4-text" type="text">Yard:</ion-label>
+              </ion-col>
+              <ion-col size="8">
+              <ion-select class="bordertask selector" interface="popover" [(ngModel)]="child.yardName" (ionChange)="onYardSelectforMultiple(item)">
+              <ion-select-option *ngFor="let yarditem of YardNamearr">{{yarditem}}</ion-select-option>
+              </ion-select>
+              </ion-col>
+              </ion-row>
+
+            <ion-row>
+              <ion-col size="4">
+                <ion-label class="h4-text" type="text">Labor Code:</ion-label>
+              </ion-col>
+              <ion-col size="8">
+                <ion-select class="bordertask selector" placeholder="{{laborCodePlaceholder}}" interface="popover"
+                  (ionChange)="onLaborCodeSelect(child)" [(ngModel)]="child.laborCode">
+                  <ion-select-option *ngFor="let laborCode of laborCodeArray; let i = index" [selected]="true"
+                    [value]="laborCode">{{laborCode}}
+                  </ion-select-option>
+                </ion-select>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="4">
+                <ion-label class="h4-text" type="text">Job ID:</ion-label>
+              </ion-col>
+              <ion-col size="8">
+                <ion-input style="height: 30px" class="bordertask selector" placeholder="Job ID or 'None'"
+                  [(ngModel)]="child.ticket"></ion-input>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="4">
+                <ion-label class="h4-text" type="text">Start Time:</ion-label>
+              </ion-col>
+              <ion-col size="6">
+                <ion-datetime style="height: 30px" class="bordertask selector" align="start" displayFormat="HH:mm"
+                  placeholder="00:00" [(ngModel)]="child.StartTime" (ionChange)="changeTimeTask(item,0)"></ion-datetime>
+              </ion-col>
+              <ion-col size="2">
+                <ion-icon (click)="openstart()" class="calendar" name="time"></ion-icon>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="4">
+                <ion-label class="h4-text" type="text">Stop Time:</ion-label>
+              </ion-col>
+              <ion-col size="6">
+                <ion-datetime style="height: 30px" class="bordertask selector" align="start" displayFormat="HH:mm"
+                  placeholder="00:00" [(ngModel)]="child.EndTime"
+                  (ionChange)="changeTimeTask(item,1)">
+                </ion-datetime>
+              </ion-col>
+              <ion-col size="2">
+                <ion-icon (click)="openstart1()" class="calendar" name="time"></ion-icon>
+                <!--<ion-datetime style="height: 30px" class="bordertask selector" align="start" displayFormat="HH:mm" placeholder="00:00"></ion-datetime>-->
+
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="4">
+                <ion-label class="h4-text">Hours:</ion-label>
+              </ion-col>
+              <ion-col size="8">
+                <ion-input style="height: 30px;padding:10px" [readonly]="readonly()" class="bordertask selector"
+                  [(ngModel)]="child.hours"></ion-input>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="4">
+              <ion-label class="h4-text" type="text">State:</ion-label>
+              </ion-col>
+              <ion-col size="8">
+              <ion-select class="bordertask selector" interface="popover" (ionChange)="onStateSelectforMultiple(child)" [(ngModel)]="child.state">
+              <ion-select-option *ngFor="let title of Statearr" [value]="title.state_abbr">{{title.state_abbr}}
+              </ion-select-option>
+              </ion-select>
+              </ion-col>
+              </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-label class="h4-text" type="text">Comment:</ion-label>
+                <ion-row>
+                  <ion-textarea class="textarea bordertask selector" placeholder="Enter comment about task log"
+                    [(ngModel)]="child.comment">
+                  </ion-textarea>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+            <!-- </ion-item> -->
+          </ion-list>
+          <hr style="background-color: black;">
+        </div>
+      </ion-list>
+      <!--end Accordion - Adding multiple tasklogs -->
+
+      <ion-row>
+        <ion-col size="4">
+          <ion-label class="h3-text" type="text">Yard:</ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-select class="bordertask selector" interface="popover" [(ngModel)]="Yard">
+            <ion-select-option *ngFor="let yarditem of YardNamearr">{{yarditem}}</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+      <!-- <ion-row>
+        <ion-col size="4">
+          <ion-label class="h3-text" type="text">Labor Code:</ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-select class="bordertask selector" interface="popover" [(ngModel)]="laborsel">
+            <ion-select-option *ngFor="let laborsel of laborCodeArray; let i = index" [selected]="true"
+              [value]="laborsel[i]">{{laborsel[i]}}
+            </ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row> -->
+      <ion-row>
+        <ion-col size="4">
+          <ion-label class="h3-text" type="text">Labor Code:</ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-select class="bordertask selector" interface="popover" [(ngModel)]="laborsel">
+            <ion-select-option *ngFor="let laborsel of laborCodeArray; let i = index" [selected]="true"
+              [value]="laborsel">{{laborsel}}
+            </ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="4">
+          <ion-label class="h3-text" type="text">Job ID:</ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-input style="height: 30px" class="bordertask selector" placeholder="Job ID or 'None'"
+            [(ngModel)]="Ticket"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="4">
+          <ion-label class="h3-text" type="text">Start Time:</ion-label>
+        </ion-col>
+        <ion-col size="6">
+          <ion-datetime #myPicker1 style="height: 30px" class="bordertask selector" align="start" displayFormat="HH:mm"
+            placeholder="00:00" [(ngModel)]="StartTime" (ionChange)="changeTime(0)"></ion-datetime>
+        </ion-col>
+        <ion-col size="2">
+          <ion-icon (click)="openStart()" class="calendar" name="time"></ion-icon>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="4">
+          <ion-label class="h3-text" type="text">Stop Time:</ion-label>
+        </ion-col>
+        <ion-col size="6">
+          <ion-datetime #myPicker2 style="height: 30px" class="bordertask selector" align="start" displayFormat="HH:mm"
+            placeholder="00:00" [(ngModel)]="EndTime" (ionChange)="changeTime(1)">
+          </ion-datetime>
+        </ion-col>
+        <ion-col size="2">
+          <ion-icon (click)="openStop()" class="calendar" name="time"></ion-icon>
+          <!--<ion-datetime style="height: 30px" class="bordertask selector" align="start" displayFormat="HH:mm" placeholder="00:00"></ion-datetime>-->
+
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="4">
+          <ion-label class="h3-text">Hours:</ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-input style="height: 30px;padding:10px" [readonly]="readonly()" class="bordertask selector"
+            [(ngModel)]="ConHours"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="4">
+          <ion-label class="h3-text" type="text">State:</ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-select class="bordertask selector" [value]="title" interface="popover" [(ngModel)]="State">
+            <ion-select-option *ngFor="let title of Statearr" [selected]="true">{{title.state_abbr}}</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-label class="h3-text" type="text">Comment:</ion-label>
+          <ion-row>
+            <ion-textarea class="textarea bordertask selector" placeholder="Enter comment about task log"
+              [(ngModel)]="Comment">
+            </ion-textarea>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <button class="buttonclsss" padding="2px" (click)="onClickAddAnotherBtn()">Add Another Task For The Day</button>
+      </ion-row>
+      <ion-row>
+        <button class="buttonclsss" padding="2px" (click)="onClickSubmit()">Submit Daily Task Log</button>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+</ion-content>

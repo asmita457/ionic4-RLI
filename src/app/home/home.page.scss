@@ -1,0 +1,42 @@
+.welcome-card{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 2%;
+  justify-content: center;
+}
+
+.background-color{
+  background-color: #E3A214;
+  cursor:pointer;
+  border: none;
+  width: 100%;
+}
+
+.h4-text{
+  text-align: left;
+  padding-left: 10px;
+}
+
+.row{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-moz-box;
+  display:-moz-flex;
+  display:-ms-flexbox;
+  display:flex;
+  padding:5px;
+  width:100%
+}
+
+
+
+.menubutton{
+  color: black !important;
+  }
+  .titleclass{
+  color: black !important;
+  }
+  .Helpclass{
+  color: black !important;
+  }

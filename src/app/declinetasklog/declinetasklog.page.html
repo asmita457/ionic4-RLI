@@ -1,0 +1,77 @@
+<!--<ion-header color="medium">-->
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start" style="color: black">
+      <ion-back-button  text="" defaultHref="home" class="menubutton">
+      </ion-back-button>
+      <ion-menu-button class="menubuttonspace"></ion-menu-button>
+    </ion-buttons>
+    <ion-title align="center" style="color: black" class="titleall">Audit Req/Declined Task Log</ion-title>
+  </ion-toolbar>
+<!--</ion-header>-->
+
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label class="h4-text">Event:</ion-label>
+      <ion-label class="h4-text">{{Event}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="h4-text">Yard:</ion-label>
+      <ion-label class="h4-text">{{Yard}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="h4-text">Date:</ion-label>
+      <ion-label class="h4-text">{{Date}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="h4-text">LOG:</ion-label>
+      <ion-label class="h4-text">{{Log}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="h4-text">Labor Code:</ion-label>
+      <ion-label class="h4-text">{{LaborCode}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="h4-text">Start Time:</ion-label>
+      <ion-label class="h4-text">{{StartTime}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="h4-text">Stop Time:</ion-label>
+      <ion-label class="h4-text">{{StopTime}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="h4-text">Hours:</ion-label>
+      <ion-label class="h4-text">{{Hours}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="h4-text">State:</ion-label>
+      <ion-label class="h4-text">{{State}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-list style="width: 100%!important; margin-bottom: 4px">
+        <ion-label style="margin-top: 5px" class="h4-text">Comment:</ion-label>
+        <ion-textarea style="padding-left: 6px;padding-top: 4px;margin-bottom: 2px" [readonly]="readonly()" class="border h4-text">{{Comment}}</ion-textarea>
+      </ion-list>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="h4-text">RLI Office Update:</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="h4-text">Status:</ion-label>
+      <ion-label class="h4-text">{{Status}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
